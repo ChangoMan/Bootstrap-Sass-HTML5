@@ -1,0 +1,28 @@
+// Main Button Variants
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, #0080b0);
+}
+.btn-secondary {
+  @include button-variant($btn-primary-color, $brand-secondary, #f08200);
+}
+.btn-light {
+  @include button-variant($text-color, $gray-lighter, transparent);
+}
+.btn-dark {
+  @include button-variant(#ffffff, #0d4d76, transparent);
+}
+.btn-white {
+  @include button-variant($text-color, #ffffff, $btn-default-border);
+  border: 1px solid #ccc;
+}
+
+// Outline Buttons ($color, $hovercolor)
+.btn-outline-primary {
+  @include button-outline-variant($btn-primary-bg, #fff);
+}
+.btn-outline-gray {
+  @include button-outline-variant($text-color, #fff);
+}
+.btn-outline-white {
+  @include button-outline-variant(#ffffff, $text-color);
+}
