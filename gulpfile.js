@@ -5,7 +5,7 @@ var gulp         = require('gulp'),
     concat       = require('gulp-concat');
 
 gulp.task('sitecss', function() {
-    gulp.src('assets/scss/**/*.scss')
+    gulp.src('assets/scss/app.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle:'compressed'

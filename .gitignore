@@ -6,3 +6,4 @@ captain_*
 /apache.txt
 .DS_Store
 sftp-config.json
+package-lock.json
